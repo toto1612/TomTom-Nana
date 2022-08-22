@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Nav bar */
+
+nav {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: beige;
+    transition: all 1s ease-out;
+    border-radius: 15px;
+}
+
+
+#subnav-container {
+    display: none;
+    border-radius: 15px;
+}
+
+#subnav-container a {
+    color: #333;
+    padding-top: 10px;
+}
+
+.navbar-button:hover,
+.navbar-button:focus {
+    color: #333;
+    background-color: #fff;
+}
+
+#subnav:hover .navbar-button {
+    color: #333;
+    background-color: #fff;
+}
+
+#subnav:hover .navbar-button a {
+    color: blue;
+    background-color: #fff;
+}
+
+#subnav:hover #subnav-container {
+    display: block;
+    align-items: left;
+    width: 110px;
+    height: 150px;
+    position: absolute;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+/* End NavBar*/
+
+.screen {
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+}
+
+#screen-l {
+    background-image: url(./img/ryan-ancill-Fg9sEbK1Cjs-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    left: 0;
+    transition: 1s ease-in;
+    transition: 1s ease-out;
+}
+
+#screen-r {
+    height: auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top:0;
+    
+    padding: 30px;
+    transition: 1s ease-in;
+    transition: 1s ease-out;
+}
+
+#reduce-button {
+    display: none;
+}
+
+.expand-container {
+    right: 0;
+    padding: 10px;;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+footer {
+    height: 10px;
+    background-color: black;
+    bottom: 0;
+}
+
+/* Article part */
+
+.article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.liste-villes {
+    margin: 10px;
+    padding: 5px;
+    background-color: bisque;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.liste-villes a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itineraire {
+    margin: 10px;
+}
+
+.trois-photos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deux-photos {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+#img-ruault-vue {
+    width: 100%;
+}
+
+#img-ruault-menu,
+#img-ruault-selfie {
+    width: 49%;
+}
