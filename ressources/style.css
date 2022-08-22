@@ -84,6 +84,9 @@ nav a {
     left: 0;
     transition: 1s ease-in;
     transition: 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #screen-r {
@@ -183,3 +186,21 @@ h1 {
 #img-ruault-selfie {
     width: 49%;
 }
+
+
+/* start MAP */
+
+#map {
+    width: 80%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#map iframe {
+    width: 100%;
+}
+
+/* end MAP */
